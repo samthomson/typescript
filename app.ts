@@ -23,3 +23,15 @@ console.log(person)
 console.log(person.name, person.username)
 person.printAge()
 person.setType("[person type]")
+
+class Sam extends Person {
+    // name = "Sam"
+
+    constructor(username: string) { 
+        super("Sam", username)
+        this.age = 29.5
+    }
+}
+
+const sam = new Sam('samthomson')
+console.log(sam)
