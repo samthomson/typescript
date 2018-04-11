@@ -1,17 +1,20 @@
-"use strict";
-var Greeter = /** @class */ (function () {
-    function Greeter(message) {
-        this.greeting = message;
+var Person = /** @class */ (function () {
+    function Person(name, username) {
+        this.username = username;
+        this.age = 29;
+        this.name = name;
     }
-    Greeter.prototype.greet = function () {
-        return "Hello, " + this.greeting;
+    Person.prototype.printAge = function () {
+        console.log(this.age);
     };
-    return Greeter;
+    Person.prototype.setType = function (type) {
+        this.type = type;
+        console.log(this.type);
+    };
+    return Person;
 }());
-var greeter = new Greeter("world");
-var button = document.createElement('button');
-button.textContent = "Say Hello";
-button.onclick = function () {
-    alert(greeter.greet());
-};
-document.body.appendChild(button);
+var person = new Person('sam', 'samthomson');
+console.log(person);
+console.log(person.name, person.username);
+person.printAge();
+person.setType("[person type]");
