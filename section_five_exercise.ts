@@ -1,3 +1,4 @@
+/*
 // Exercise 1 - How was your TypeScript Class?
 class Car {
 
@@ -69,3 +70,4 @@ person.firstName = "Sa";
 console.log('name: ', person.firstName);
 person.firstName = "Sam";
 console.log('name: ', person.firstName);
+*/
